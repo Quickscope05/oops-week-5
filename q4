@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+class Bank
+{
+public: int amount;
+int getBalance()
+{
+return 0;
+}
+};
+class BankA : public Bank
+{
+public :
+int getBalance(int balance)
+{
+return balance;
+}
+};
+class BankB : public Bank
+{
+public :
+int getBalance(int balance)
+{
+return balance;
+}
+};
+class BankC : public Bank
+{
+public :
+int getBalance(int balance)
+{
+return balance;
+}
+};
+int main()
+{
+BankA a;BankB b;BankC c;
+cout<<"Bank A : "<<a.getBalance(1000)<<endl;
+cout<<"Bank B : "<<b.getBalance(1500)<<endl;
+cout<<"Bank C : "<<c.getBalance(2000);
+return 0;
+}
