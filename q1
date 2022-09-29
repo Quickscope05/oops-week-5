@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class AddAmount
+{
+public : int amount=50;
+AddAmount()
+{
+amount=50;
+}
+AddAmount(int n)
+{
+amount+=n;
+}
+void display()
+{
+cout<<"Amount : "<<amount<<endl;
+}
+};
+int main()
+{
+AddAmount a1;//without input
+a1.display();
+int n;cout<<"The amount to be added : ";cin>>n;
+AddAmount a2(n);//with input
+a2.display();
+return 0;
+}
